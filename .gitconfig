@@ -1,0 +1,33 @@
+[core]
+        editor = nvim
+        excludesfile = ~/.gitignore_global
+        autocrlf = input
+[user]
+        name = Daniel Muñoz
+        email = dsantiagomj@gmail.com
+        username = Dsantiagomj
+[github]
+        user = dsantiagomj
+[color]
+        status = auto
+        diff = auto
+        branch = auto
+        inteactive = auto
+        grep = auto
+	ui = auto
+[alias]
+        st = status
+        aa = add .
+        ca = commit -a
+        cm = commit -m
+        cam = commit -am
+        ba = branch -a
+        co = checkout
+        cob = checkout -b
+        uu = reset
+        gp = "!git push -u origin $(git branch-name)"
+        gl = "!git pull origin $(git branch-name)"
+        branch-name = "!git rev-parse --abbrev-ref HEAD"
+        ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+        theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+        delete-merged-branches = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d

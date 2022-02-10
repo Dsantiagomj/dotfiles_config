@@ -1,0 +1,4 @@
+"coc.preferences.formatOnSaveFileTypes": ["javascript","javascriptreact","typescript","typescriptreact","html","vue","markdown", "css", "scss"],
+"eslint.enable": true,
+"eslint.alwaysShowStatus": true,
+"eslint.probe": ["javascript","javascriptreact","typescript","typescriptreact","html","vue","markdown". "css", "scss"]
